@@ -159,5 +159,7 @@ int main(int argc, char **argv) {
         pthread_join(thread[i], NULL);
     }
 
+    free(thread);
+
     return 0;
 }
